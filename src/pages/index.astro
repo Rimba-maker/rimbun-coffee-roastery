@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero';
+import About from '../components/About.astro';
+import FeaturedBeans from '../components/FeaturedBeans';
+import BrewingMethod from '../components/BrewingMethod';
+import RoasteryProcess from '../components/RoasteryProcess.astro';
+import WholesaleCTA from '../components/WholesaleCTA.astro';
+import Testimonials from '../components/Testimonials';
+import CtaBand from '../components/CtaBand.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout>
+  <Navbar />
+  <Hero client:load />
+  <About />
+  <FeaturedBeans client:visible />
+  <BrewingMethod client:visible />
+  <RoasteryProcess />
+  <WholesaleCTA />
+  <Testimonials client:visible />
+  <CtaBand />
+  <Footer />
+</BaseLayout>

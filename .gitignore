@@ -5,3 +5,4 @@ dist/
 .env.*
 !.env.example
 index.astro
+01-kopi-specialty-PRD.md
